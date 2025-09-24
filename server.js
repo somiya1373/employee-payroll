@@ -7,7 +7,6 @@ import employeeRoutes from './routes/employeeRoutes.js';
 import salaryRoutes from './routes/salaryRoutes.js';
 import payrollRoutes from './routes/payrollRoutes.js';
 import { errorHandler } from './middleware/errorHandler.js';
-
 dotenv.config();
 connectDB();
 
@@ -33,3 +32,4 @@ const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
